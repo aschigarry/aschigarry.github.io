@@ -1,0 +1,1270 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>秋霰免费电影在线观看_秋霰片单_秋霰影片分类</title>
+<meta name="description" content="秋霰免费电影在线观看提供秋霰影库的完整片单、类型分类、更新动态与观看顺序建议，涵盖剧情长片、纪录影像与短片合集，适合想系统了解秋霰作品的影迷查找条目与判断观看优先级。">
+<meta name="keywords" content="秋霰片单,秋霰剧情长片,秋霰纪录影像,秋霰短片合集,秋霰影库">
+<style>
+:root{
+  --ink:#1c1a17;
+  --ink-soft:#4a453e;
+  --ink-mute:#7a7268;
+  --paper:#f6f2ea;
+  --paper-2:#efe9dd;
+  --panel:#fffdf8;
+  --line:#ded5c6;
+  --line-soft:#eae2d5;
+  --amber:#b4622a;
+  --amber-deep:#8a4620;
+  --amber-soft:#f3e2d2;
+  --teal:#2f5d5a;
+  --teal-soft:#dce9e6;
+  --gold:#c99a3f;
+  --radius:10px;
+  --radius-sm:6px;
+  --shadow:0 1px 2px rgba(28,26,23,.06),0 6px 18px -10px rgba(28,26,23,.18);
+  --shadow-lg:0 2px 4px rgba(28,26,23,.06),0 18px 40px -22px rgba(28,26,23,.28);
+  --serif:"Songti SC","Noto Serif SC","Source Han Serif SC",Georgia,"Times New Roman",serif;
+  --sans:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  --sticky-h:96px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  font-family:var(--sans);
+  color:var(--ink);
+  background:
+    radial-gradient(1200px 500px at 80% -140px, #f3e7d6 0%, transparent 70%),
+    var(--paper);
+  line-height:1.75;
+  font-size:15.5px;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{font-family:var(--serif);line-height:1.32;margin:0;letter-spacing:.01em}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+ul,ol{margin:0;padding:0;list-style:none}
+img{display:block;max-width:100%}
+button{font-family:inherit}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:4px}
+
+/* ---------- sticky stack ---------- */
+.sticky-stack{position:sticky;top:0;z-index:60}
+.announce{
+  background:linear-gradient(90deg,var(--ink) 0%,#2f2a24 60%,#3a3229 100%);
+  color:#f0e7d8;
+  font-size:13px;
+  letter-spacing:.02em;
+}
+.announce-in{
+  max-width:1340px;margin:0 auto;padding:8px 24px;
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.announce .dot{
+  width:6px;height:6px;border-radius:50%;background:var(--gold);
+  box-shadow:0 0 0 4px rgba(201,154,63,.18);flex:none;
+}
+.announce strong{color:#fff;font-weight:600}
+.announce a{margin-left:auto;color:var(--gold);font-weight:600;white-space:nowrap}
+.announce a:hover{text-decoration:underline}
+
+header.site{
+  background:rgba(255,253,248,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.head-in{
+  max-width:1340px;margin:0 auto;padding:12px 24px;
+  display:flex;align-items:center;gap:22px;
+}
+.brand{display:flex;align-items:center;gap:11px;flex:none}
+.brand-mark{width:38px;height:38px;flex:none}
+.brand-text{display:flex;flex-direction:column;line-height:1.15}
+.brand-name{font-family:var(--serif);font-size:21px;font-weight:700;letter-spacing:.04em}
+.brand-sub{font-size:10.5px;color:var(--ink-mute);letter-spacing:.22em;text-transform:uppercase}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;margin-left:6px}
+nav.main a{
+  padding:7px 11px;border-radius:var(--radius-sm);font-size:14px;color:var(--ink-soft);
+  transition:background .15s,color .15s;
+}
+nav.main a:hover{background:var(--amber-soft);color:var(--amber-deep)}
+.head-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.search-box{position:relative;display:flex;align-items:center}
+.search-box input{
+  width:200px;padding:8px 12px 8px 32px;border:1px solid var(--line);
+  border-radius:20px;background:var(--paper);font-size:13.5px;color:var(--ink);
+  transition:border-color .15s,box-shadow .15s,width .2s;
+}
+.search-box input:focus{outline:none;border-color:var(--amber);box-shadow:0 0 0 3px rgba(180,98,42,.13);width:230px;background:#fff}
+.search-box svg{position:absolute;left:10px;width:15px;height:15px;stroke:var(--ink-mute);fill:none;stroke-width:2;pointer-events:none}
+.btn-ghost{
+  border:1px solid var(--line);background:var(--panel);color:var(--ink-soft);
+  padding:8px 15px;border-radius:20px;font-size:13.5px;cursor:pointer;transition:.15s;
+}
+.btn-ghost:hover{border-color:var(--amber);color:var(--amber-deep)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero-in{
+  max-width:1340px;margin:0 auto;padding:54px 24px 58px;
+  display:grid;grid-template-columns:1fr 420px;gap:52px;align-items:center;
+}
+.hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.16em;
+  color:var(--amber-deep);background:var(--amber-soft);padding:5px 13px;border-radius:20px;
+  font-weight:600;margin-bottom:20px;
+}
+.hero h1{
+  font-size:clamp(34px,4.4vw,54px);font-weight:700;letter-spacing:.02em;
+  margin-bottom:18px;color:var(--ink);
+}
+.hero h1 em{font-style:normal;color:var(--amber);position:relative}
+.hero-lede{max-width:600px;color:var(--ink-soft);font-size:16px;line-height:1.9}
+.hero-actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.btn-primary{
+  background:var(--ink);color:#f7f0e4;padding:12px 26px;border-radius:26px;
+  font-size:14.5px;font-weight:600;border:1px solid var(--ink);transition:.18s;cursor:pointer;
+}
+.btn-primary:hover{background:var(--amber-deep);border-color:var(--amber-deep);transform:translateY(-1px)}
+.btn-outline{
+  background:transparent;color:var(--ink);padding:12px 24px;border-radius:26px;
+  font-size:14.5px;font-weight:600;border:1px solid var(--line);transition:.18s;cursor:pointer;
+}
+.btn-outline:hover{border-color:var(--ink);background:var(--panel)}
+.hero-stats{display:flex;gap:34px;margin-top:36px;flex-wrap:wrap}
+.hero-stats div{display:flex;flex-direction:column}
+.hero-stats b{font-family:var(--serif);font-size:25px;color:var(--ink);letter-spacing:.02em}
+.hero-stats span{font-size:12px;color:var(--ink-mute);letter-spacing:.08em}
+
+.hero-art{position:relative;height:400px}
+.art-frame{
+  position:absolute;inset:0;border-radius:18px;overflow:hidden;
+  box-shadow:var(--shadow-lg);border:1px solid var(--line);
+}
+.art-frame svg{width:100%;height:100%;display:block}
+.art-card{
+  position:absolute;background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--radius);padding:13px 16px;box-shadow:var(--shadow-lg);
+}
+.art-card.a{left:-20px;bottom:52px;width:190px}
+.art-card.b{right:-14px;top:34px;width:158px}
+.art-card .t{font-size:11px;letter-spacing:.14em;color:var(--ink-mute);margin-bottom:5px}
+.art-card .n{font-family:var(--serif);font-size:15px;font-weight:700;line-height:1.4}
+.art-card .m{font-size:12px;color:var(--amber-deep);margin-top:5px;font-weight:600}
+
+/* ---------- layout ---------- */
+.wrap{max-width:1340px;margin:0 auto;padding:0 24px}
+.layout{
+  display:grid;grid-template-columns:186px minmax(0,1fr) 258px;
+  gap:36px;padding:44px 0 20px;align-items:start;
+}
+[id]{scroll-margin-top:calc(var(--sticky-h) + 14px)}
+
+/* ---------- left channel rail ---------- */
+.rail{position:sticky;top:calc(var(--sticky-h) + 20px)}
+.rail-head{
+  font-size:11px;letter-spacing:.2em;color:var(--ink-mute);
+  padding-bottom:10px;border-bottom:1px solid var(--line);margin-bottom:12px;
+}
+.rail-nav{display:flex;flex-direction:column;gap:1px}
+.rail-nav a{
+  display:flex;justify-content:space-between;align-items:center;gap:8px;
+  padding:8px 10px;border-radius:var(--radius-sm);font-size:13.5px;color:var(--ink-soft);
+  transition:.14s;border-left:2px solid transparent;
+}
+.rail-nav a:hover{background:var(--paper-2);color:var(--ink)}
+.rail-nav a span{font-size:11px;color:var(--ink-mute);font-variant-numeric:tabular-nums}
+.rail-note{
+  margin-top:22px;padding:14px;background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--radius);font-size:12.5px;color:var(--ink-mute);line-height:1.75;
+}
+.rail-note b{display:block;color:var(--ink);font-size:13px;margin-bottom:5px;font-family:var(--serif)}
+
+/* ---------- main column ---------- */
+.main-col{min-width:0}
+section.block{margin-bottom:52px}
+.block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.block-head h2{font-size:23px;font-weight:700}
+.block-head .eyebrow{
+  font-size:11px;letter-spacing:.18em;color:var(--amber-deep);font-weight:600;
+  display:block;margin-bottom:6px;font-family:var(--sans);
+}
+.block-head .more{font-size:13px;color:var(--ink-mute);white-space:nowrap;flex:none}
+.block-head .more:hover{color:var(--amber-deep)}
+.lede{color:var(--ink-soft);font-size:15px;line-height:1.95}
+.lede p+p{margin-top:12px}
+
+/* overview */
+.overview-box{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:26px 28px;box-shadow:var(--shadow);
+}
+.overview-box p{color:var(--ink-soft);font-size:14.8px;line-height:1.95}
+.overview-box p+p{margin-top:13px}
+.overview-box strong{color:var(--ink);font-weight:600}
+.pill-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.pill{
+  font-size:12.5px;padding:5px 12px;border-radius:20px;
+  background:var(--teal-soft);color:var(--teal);border:1px solid #c9ded9;font-weight:600;
+}
+
+/* featured cards */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:.2s;box-shadow:var(--shadow);
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);border-color:#d2c3ad}
+.card-img{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--paper-2)}
+.card-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.card:hover .card-img img{transform:scale(1.04)}
+.card-badge{
+  position:absolute;top:10px;left:10px;background:rgba(28,26,23,.82);color:#f4ecdd;
+  font-size:11px;padding:3px 9px;border-radius:14px;letter-spacing:.06em;font-weight:600;
+  backdrop-filter:blur(4px);
+}
+.card-body{padding:15px 17px 17px;display:flex;flex-direction:column;flex:1}
+.card-title{font-family:var(--serif);font-size:16.5px;font-weight:700;line-height:1.4;margin-bottom:6px}
+.card-type{font-size:11.5px;color:var(--amber-deep);font-weight:600;letter-spacing:.05em;margin-bottom:8px}
+.card-desc{font-size:13px;color:var(--ink-mute);line-height:1.72;flex:1}
+.card-foot{
+  display:flex;justify-content:space-between;align-items:center;gap:10px;
+  margin-top:12px;padding-top:11px;border-top:1px dashed var(--line-soft);font-size:11.5px;color:var(--ink-mute);
+}
+.card-foot .score{color:var(--amber-deep);font-weight:700;font-family:var(--serif);font-size:14px}
+.tagline{display:flex;flex-wrap:wrap;gap:5px;margin-top:9px}
+.tagline i{
+  font-style:normal;font-size:11px;background:var(--paper-2);color:var(--ink-mute);
+  padding:2px 8px;border-radius:4px;
+}
+
+/* update list */
+.updates{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.updates li{
+  display:grid;grid-template-columns:78px minmax(0,1fr) auto;gap:16px;align-items:baseline;
+  padding:13px 20px;border-bottom:1px solid var(--line-soft);transition:background .14s;
+}
+.updates li:last-child{border-bottom:none}
+.updates li:hover{background:#faf6ee}
+.updates time{font-size:12px;color:var(--ink-mute);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.updates .tt{font-size:14.2px;font-weight:600;color:var(--ink)}
+.updates .tt small{display:block;font-weight:400;color:var(--ink-mute);font-size:12.6px;margin-top:2px;line-height:1.6}
+.updates .badge{font-size:11px;padding:2px 9px;border-radius:12px;font-weight:600;white-space:nowrap}
+.b-new{background:var(--amber-soft);color:var(--amber-deep)}
+.b-live{background:#fbe0dc;color:#a83a2a}
+.b-up{background:var(--teal-soft);color:var(--teal)}
+
+/* categories */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 15px;transition:.16s;display:flex;flex-direction:column;gap:4px;
+}
+.cat:hover{border-color:var(--amber);background:#fffaf2;transform:translateY(-2px)}
+.cat b{font-family:var(--serif);font-size:15.5px}
+.cat span{font-size:11.5px;color:var(--ink-mute)}
+.cat em{font-style:normal;font-size:11px;color:var(--amber-deep);font-weight:600}
+
+/* deep read */
+.deep{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:34px 38px;box-shadow:var(--shadow);
+}
+.deep h3{
+  font-size:18.5px;font-weight:700;margin:26px 0 11px;padding-left:13px;
+  border-left:3px solid var(--amber);line-height:1.4;
+}
+.deep h3:first-of-type{margin-top:4px}
+.deep p{color:var(--ink-soft);font-size:14.8px;line-height:1.95;margin-bottom:12px}
+.deep ul{margin:8px 0 14px;padding-left:0}
+.deep ul li{
+  position:relative;padding-left:19px;font-size:14.4px;color:var(--ink-soft);
+  line-height:1.9;margin-bottom:6px;
+}
+.deep ul li::before{
+  content:"";position:absolute;left:4px;top:11px;width:6px;height:6px;
+  border-radius:1px;background:var(--gold);transform:rotate(45deg);
+}
+.deep .callout{
+  background:var(--paper);border-left:3px solid var(--teal);border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  padding:14px 18px;margin:16px 0;font-size:14px;color:var(--ink-soft);line-height:1.85;
+}
+.deep .callout b{color:var(--teal)}
+
+/* compare */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0 6px}
+.cmp{
+  border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;background:var(--paper);
+}
+.cmp h4{font-size:15px;margin-bottom:8px;color:var(--ink)}
+.cmp p{font-size:13.4px;color:var(--ink-mute);line-height:1.8;margin:0}
+.cmp.a{border-top:3px solid var(--amber)}
+.cmp.b{border-top:3px solid var(--teal)}
+
+/* guide steps */
+.steps{counter-reset:s;display:flex;flex-direction:column;gap:0}
+.step{
+  display:grid;grid-template-columns:44px minmax(0,1fr);gap:18px;
+  padding:18px 0;border-bottom:1px dashed var(--line);
+}
+.step:last-child{border-bottom:none}
+.step::before{
+  counter-increment:s;content:counter(s,decimal-leading-zero);
+  font-family:var(--serif);font-size:19px;font-weight:700;color:var(--amber);
+  width:44px;height:44px;border-radius:50%;background:var(--amber-soft);
+  display:flex;align-items:center;justify-content:center;
+}
+.step h4{font-size:15.5px;margin-bottom:5px}
+.step p{font-size:13.8px;color:var(--ink-mute);line-height:1.8}
+
+/* faq */
+.faq details{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  margin-bottom:10px;overflow:hidden;transition:border-color .15s;
+}
+.faq details[open]{border-color:#d3c1a6;box-shadow:var(--shadow)}
+.faq summary{
+  padding:15px 20px;cursor:pointer;font-weight:600;font-size:14.6px;color:var(--ink);
+  list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";font-size:19px;color:var(--amber);font-weight:400;flex:none;line-height:1;
+  transition:transform .2s;
+}
+.faq details[open] summary::after{content:"–"}
+.faq .ans{padding:0 20px 17px;font-size:14px;color:var(--ink-soft);line-height:1.9}
+
+/* comments */
+.comments{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.cm{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:14px 16px;
+}
+.cm-top{display:flex;align-items:center;gap:9px;margin-bottom:7px}
+.ava{
+  width:28px;height:28px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;
+  font-family:var(--serif);font-size:13px;font-weight:700;color:#fff;
+}
+.cm-name{font-size:13.2px;font-weight:600}
+.cm-time{font-size:11px;color:var(--ink-mute);margin-left:auto;white-space:nowrap}
+.cm-body{font-size:13.3px;color:var(--ink-soft);line-height:1.8}
+.cm-body b{color:var(--amber-deep);font-weight:600}
+
+/* news */
+.news{display:flex;flex-direction:column;gap:0;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.news li{padding:16px 20px;border-bottom:1px solid var(--line-soft);transition:background .14s}
+.news li:last-child{border-bottom:none}
+.news li:hover{background:#faf6ee}
+.news h4{font-size:14.8px;font-weight:600;margin-bottom:5px;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.news h4 time{font-size:11.5px;color:var(--ink-mute);font-weight:400;font-variant-numeric:tabular-nums}
+.news p{font-size:13.2px;color:var(--ink-mute);line-height:1.78}
+
+/* related tags */
+.rel-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.rel{
+  display:flex;align-items:center;gap:11px;padding:12px 15px;background:var(--panel);
+  border:1px solid var(--line);border-radius:var(--radius);transition:.15s;
+}
+.rel:hover{border-color:var(--teal);background:#f6fbfa}
+.rel .k{
+  font-family:var(--serif);font-size:12px;font-weight:700;color:var(--teal);
+  width:24px;height:24px;border-radius:50%;background:var(--teal-soft);
+  display:flex;align-items:center;justify-content:center;flex:none;
+}
+.rel .tx b{display:block;font-size:13.6px;font-weight:600}
+.rel .tx span{font-size:11.5px;color:var(--ink-mute)}
+
+/* ranking */
+.rank{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.rank li{
+  display:grid;grid-template-columns:36px minmax(0,1fr) 86px 60px;gap:12px;align-items:center;
+  padding:11px 18px;border-bottom:1px solid var(--line-soft);font-size:13.6px;
+}
+.rank li:last-child{border-bottom:none}
+.rank .rk{
+  font-family:var(--serif);font-weight:700;font-size:16px;color:var(--ink-mute);
+  text-align:center;font-variant-numeric:tabular-nums;
+}
+.rank li:nth-child(-n+3) .rk{color:var(--amber)}
+.rank .nm b{font-weight:600;display:block}
+.rank .nm span{font-size:11.5px;color:var(--ink-mute)}
+.bar{height:5px;background:var(--paper-2);border-radius:3px;overflow:hidden}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--amber));border-radius:3px}
+.rank .val{text-align:right;font-family:var(--serif);font-weight:700;font-size:13.5px;color:var(--amber-deep);font-variant-numeric:tabular-nums}
+
+/* ---------- right sidebar ---------- */
+.side{display:flex;flex-direction:column;gap:22px;position:sticky;top:calc(var(--sticky-h) + 20px)}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.panel h3{
+  font-size:14.5px;font-weight:700;margin-bottom:13px;padding-bottom:9px;
+  border-bottom:1px solid var(--line-soft);display:flex;justify-content:space-between;align-items:center;
+}
+.panel h3 span{font-size:11px;color:var(--ink-mute);font-weight:400;font-family:var(--sans)}
+.hot li{display:flex;gap:11px;padding:8px 0;border-bottom:1px dashed var(--line-soft);align-items:baseline}
+.hot li:last-child{border-bottom:none}
+.hot .n{
+  font-family:var(--serif);font-size:13px;font-weight:700;color:var(--amber);
+  flex:none;width:16px;font-variant-numeric:tabular-nums;
+}
+.hot .t b{display:block;font-size:13.2px;font-weight:600;line-height:1.5}
+.hot .t span{font-size:11.2px;color:var(--ink-mute)}
+.side-note{font-size:12.3px;color:var(--ink-mute);line-height:1.8}
+.side-note b{color:var(--ink)}
+.side-tags{display:flex;flex-wrap:wrap;gap:7px}
+.side-tags a{
+  font-size:12px;padding:4px 10px;background:var(--paper-2);color:var(--ink-soft);
+  border-radius:14px;transition:.14s;
+}
+.side-tags a:hover{background:var(--amber-soft);color:var(--amber-deep)}
+.side-list li{padding:7px 0;font-size:12.8px;border-bottom:1px dashed var(--line-soft);display:flex;justify-content:space-between;gap:10px}
+.side-list li:last-child{border-bottom:none}
+.side-list li span{color:var(--ink-mute);font-size:11.5px;flex:none}
+
+/* no result */
+.no-result{
+  display:none;padding:16px 20px;background:var(--amber-soft);border:1px solid #e7cdb4;
+  border-radius:var(--radius);color:var(--amber-deep);font-size:13.5px;margin-bottom:18px;
+}
+.no-result.show{display:block}
+.is-hidden{display:none !important}
+
+/* ---------- footer ---------- */
+footer.site{
+  margin-top:56px;background:#211e1a;color:#c9c1b3;padding:48px 0 26px;font-size:13.5px;
+}
+.foot-in{max-width:1340px;margin:0 auto;padding:0 24px}
+.foot-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:36px;padding-bottom:34px;border-bottom:1px solid #3a342c}
+.foot-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.foot-brand .brand-name{color:#f3ece0;font-size:19px}
+.foot-brand .brand-sub{color:#8a8175}
+.foot-desc{font-size:12.8px;line-height:1.85;color:#a49b8d;max-width:320px}
+.foot-col h4{font-size:13px;color:#f0e8da;margin-bottom:11px;letter-spacing:.08em;font-family:var(--sans);font-weight:600}
+.foot-col a{display:block;padding:4px 0;color:#a49b8d;font-size:12.8px;transition:.14s}
+.foot-col a:hover{color:var(--gold)}
+.foot-bottom{padding-top:22px;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-size:12px;color:#877e71;line-height:1.8}
+.foot-bottom p{max-width:760px}
+
+/* ---------- responsive ---------- */
+@media (max-width:1180px){
+  .layout{grid-template-columns:170px minmax(0,1fr) 236px;gap:26px}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:1024px){
+  :root{--sticky-h:92px}
+  .layout{grid-template-columns:minmax(0,1fr) 258px;gap:28px}
+  .rail{
+    position:static;grid-column:1 / -1;top:auto;
+    border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);
+    padding:14px 16px;margin-bottom:4px;
+  }
+  .rail-head{margin-bottom:9px;padding-bottom:8px}
+  .rail-nav{flex-direction:row;flex-wrap:wrap;gap:6px}
+  .rail-nav a{border-left:none;border:1px solid var(--line);padding:6px 12px;font-size:13px;border-radius:16px}
+  .rail-nav a span{display:none}
+  .rail-note{display:none}
+  .hero-in{grid-template-columns:1fr;gap:34px}
+  .hero-art{height:300px;max-width:460px}
+  .hero-stats{gap:26px}
+  .side{position:static;top:auto}
+  .foot-top{grid-template-columns:1fr 1fr;gap:28px}
+}
+@media (max-width:740px){
+  :root{--sticky-h:104px}
+  body{font-size:15px}
+  .announce-in{padding:7px 16px;font-size:12px;gap:8px}
+  .announce a{margin-left:0}
+  .head-in{padding:10px 16px;gap:12px;flex-wrap:wrap}
+  nav.main{order:3;width:100%;margin-left:0;gap:2px;overflow-x:auto;flex-wrap:nowrap;padding-bottom:2px}
+  nav.main a{white-space:nowrap;padding:5px 9px;font-size:13px}
+  .head-tools{margin-left:auto}
+  .search-box input{width:130px;padding-left:28px}
+  .search-box input:focus{width:150px}
+  .btn-ghost{display:none}
+  .wrap{padding:0 16px}
+  .hero-in{padding:36px 16px 40px;gap:26px}
+  .hero h1{font-size:31px}
+  .hero-lede{font-size:14.8px}
+  .hero-art{height:240px}
+  .art-card.a{left:-6px;bottom:16px;width:158px;padding:10px 13px}
+  .art-card.b{right:-4px;top:12px;width:132px;padding:10px 13px}
+  .layout{grid-template-columns:minmax(0,1fr);gap:0;padding:26px 0 0}
+  .rail{position:sticky;top:var(--sticky-h);z-index:40;margin-bottom:18px}
+  .cards{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .comments{grid-template-columns:1fr}
+  .rel-grid{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .deep{padding:24px 20px}
+  .overview-box{padding:20px}
+  .updates li{grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:12px 15px}
+  .updates time{grid-column:1 / -1;font-size:11.5px}
+  .rank li{grid-template-columns:28px minmax(0,1fr) 62px;gap:9px;padding:10px 14px}
+  .rank .bar{display:none}
+  .foot-top{grid-template-columns:1fr;gap:22px}
+  .block-head h2{font-size:20px}
+  section.block{margin-bottom:40px}
+  .foot-bottom{flex-direction:column;gap:10px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="sticky-stack">
+  <div class="announce">
+    <div class="announce-in">
+      <span class="dot" aria-hidden="true"></span>
+      <span>本周影库新增 <strong>12 部</strong>秋霰作品，含纪录影像 3 部与短片合集 2 辑</span>
+      <a href="/#updates">查看更新清单 →</a>
+    </div>
+  </div>
+
+  <header class="site">
+    <div class="head-in">
+      <a class="brand" href="/#top" aria-label="秋霰免费电影在线观看 首页">
+        <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+          <rect x="1" y="1" width="38" height="38" rx="10" fill="#1c1a17"/>
+          <path d="M11 26c4-1 6-4 7-8 1 4 3 7 7 8-4 1-6 4-7 8-1-4-3-7-7-8z" fill="#c99a3f"/>
+          <circle cx="28.5" cy="12.5" r="3" fill="#b4622a"/>
+          <path d="M9 12h8" stroke="#f3ece0" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>
+        </svg>
+        <span class="brand-text">
+          <span class="brand-name">秋霰免费电影在线观看</span>
+          <span class="brand-sub">QIUXIAN FILM ARCHIVE</span>
+        </span>
+      </a>
+      <nav class="main" aria-label="主题导航">
+        <a href="/#overview">影库概览</a>
+        <a href="/#featured">精选片单</a>
+        <a href="/#updates">更新动态</a>
+        <a href="/#categories">类型分类</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#faq">常见问答</a>
+      </nav>
+      <div class="head-tools">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+          <input id="q" type="search" placeholder="搜索片名 / 类型" aria-label="搜索片名或类型" autocomplete="off">
+        </div>
+        <button class="btn-ghost" type="button" id="resetBtn">全部条目</button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-in">
+      <div>
+        <span class="hero-kicker">2026 秋季影库 · 已收录 386 部</span>
+        <h1>秋霰免费电影在线观看</h1>
+        <p class="hero-lede">按剧情长片、纪录影像、短片合集三条主线整理的秋霰影库，标注了每部作品的时长、年份、可看性与适合的观看顺序。想找一部能一口气看完的长片，或先摸清这个系列到底在讲什么，都可以从这里进入。</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="/#featured">查看本周精选 9 部</a>
+          <a class="btn-outline" href="/#guide">按观看顺序进入</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>386</b><span>收录条目</span></div>
+          <div><b>9</b><span>本周精选</span></div>
+          <div><b>12</b><span>近期待更新</span></div>
+          <div><b>4.6</b><span>影库均分</span></div>
+        </div>
+      </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <div class="art-frame">
+          <svg viewBox="0 0 420 400" preserveAspectRatio="xMidYMid slice">
+            <defs>
+              <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#2b2621"/>
+                <stop offset=".55" stop-color="#4a3b2c"/>
+                <stop offset="1" stop-color="#b4622a"/>
+              </linearGradient>
+              <linearGradient id="mist" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f6f2ea" stop-opacity=".28"/>
+                <stop offset="1" stop-color="#f6f2ea" stop-opacity="0"/>
+              </linearGradient>
+            </defs>
+            <rect width="420" height="400" fill="url(#sky)"/>
+            <circle cx="300" cy="120" r="58" fill="#c99a3f" opacity=".9"/>
+            <circle cx="300" cy="120" r="76" fill="none" stroke="#c99a3f" stroke-width="1" opacity=".35"/>
+            <path d="M0 268 L92 196 L160 240 L236 168 L320 236 L420 186 L420 400 L0 400 Z" fill="#241f1a" opacity=".95"/>
+            <path d="M0 316 L78 262 L168 306 L258 250 L348 300 L420 268 L420 400 L0 400 Z" fill="#171412"/>
+            <path d="M0 220 Q120 190 210 226 T420 214 L420 400 L0 400 Z" fill="url(#mist)"/>
+            <g stroke="#f3ece0" stroke-width="1.1" opacity=".5" fill="none">
+              <path d="M36 74h64"/><path d="M36 88h40"/><path d="M36 102h52"/>
+            </g>
+            <g fill="#f3ece0" opacity=".75">
+              <circle cx="352" cy="330" r="2"/><circle cx="330" cy="308" r="1.5"/>
+              <circle cx="374" cy="292" r="1.6"/><circle cx="60" cy="330" r="1.7"/>
+            </g>
+            <path d="M300 120 L330 120 L330 96 Z" fill="#2b2621" opacity=".55"/>
+          </svg>
+        </div>
+        <div class="art-card a">
+          <div class="t">今晚 21:10 上架</div>
+          <div class="n">《霜降之后》第 3 部</div>
+          <div class="m">长片 · 118 分钟 · 4.8</div>
+        </div>
+        <div class="art-card b">
+          <div class="t">本周热度</div>
+          <div class="n">雾港手记</div>
+          <div class="m">↑ 上升 6 位</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="layout">
+
+      <!-- LEFT RAIL -->
+      <aside class="rail" aria-label="频道索引">
+        <div class="rail-head">频道索引</div>
+        <nav class="rail-nav">
+          <a href="/#overview">影库概览 <span>386</span></a>
+          <a href="/#featured">精选片单 <span>9</span></a>
+          <a href="/#updates">更新动态 <span>12</span></a>
+          <a href="/#categories">类型分类 <span>8</span></a>
+          <a href="/#deep">深度解析 <span>—</span></a>
+          <a href="/#guide">观看顺序 <span>5</span></a>
+          <a href="/#faq">常见问答 <span>6</span></a>
+          <a href="/#comments">影迷评论 <span>16</span></a>
+          <a href="/#news">相关资讯 <span>6</span></a>
+          <a href="/#related">延伸方向 <span>8</span></a>
+          <a href="/#ranking">热度榜单 <span>10</span></a>
+        </nav>
+        <div class="rail-note">
+          <b>影库说明</b>
+          条目按上线时间与类型双线归档，评分来自近 30 天影迷打分，每日 09:00 更新一次。
+        </div>
+      </aside>
+
+      <!-- MAIN -->
+      <div class="main-col">
+
+        <!-- 1 overview -->
+        <section class="block" id="overview">
+          <div class="block-head">
+            <div>
+              <span class="eyebrow">OVERVIEW</span>
+              <h2>秋霰影库概览：三条主线与它们的差别</h2>
+            </div>
+          </div>
+          <div class="overview-box">
+            <p><strong>秋霰免费电影在线观看</strong>所指向的影库，并不是一个单一类型的片单，而是由三条制作逻辑不同的主线构成：剧情长片、纪录影像与短片合集。三者共用同一套视觉语言——低饱和的秋色、大量固定镜头、自然光与实景——但节奏和观看场景差别很大。长片多在 95 至 130 分钟之间，适合整块时间投入；纪录影像平均 50 分钟，偏向人物访谈与地域观察；短片合集则以 15 至 25 分钟为一辑，适合碎片时间。</p>
+            <p>当前影库共收录 386 个条目，其中剧情长片 168 部、纪录影像 134 部、短片合集 84 辑。2026 年秋季新上线的作品中，<strong>《霜降之后》</strong>系列第三部、<strong>《雾港手记》</strong>与纪录影像<strong>《河湾十四户》</strong>是讨论度最高的三部。前者延续了小镇群像的叙事，后两者则分别把镜头放在港口夜班与沿河村落，题材差异明显，但都保持了同一套克制的对白密度。</p>
+            <p>值得注意的方向是：近两年影库明显增加了对「季节」的依赖，多数作品把主要场景安排在秋季，光线偏冷，色彩偏黄褐。这不只是审美选择，也直接影响了观看体验——同一部片在白天与夜间观看，情绪落点会有明显差别。若你第一次接触这条线，建议先看时长较短的纪录影像，再进入长片。</p>
+            <div class="pill-row">
+              <span class="pill">剧情长片 168</span>
+              <span class="pill">纪录影像 134</span>
+              <span class="pill">短片合集 84</span>
+              <span class="pill">2026 秋新增 12</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2 featured -->
+        <section class="block" id="featured">
+          <div class="block-head">
+            <div>
+              <span class="eyebrow">FEATURED</span>
+              <h2>本周精选：9 部值得先看的条目</h2>
+            </div>
+            <a class="more" href="/#ranking">按热度排序 →</a>
+          </div>
+          <div class="no-result" id="noResult">没有找到匹配的条目，试试输入「雾港」「纪录」或「短片」等关键词。</div>
+          <div class="cards" id="cardGrid">
+
+            <article class="card" data-key="霜降之后 剧情长片 小镇 群像">
+              <div class="card-img">
+                <img src="https://picsum.photos/seed/qiuxian-shuangjiang01/400/300" width="400" height="300" loading="lazy" alt="《霜降之后》第三部小镇群像剧照">
+                <span class="card-badge">今日上架</span>
+              </div>
+              <div class="card-body">
+                <div class="card-type">剧情长片 · 118 分钟</div>
+                <h3 class="card-title">霜降之后（第三部）</h3>
+                <p class="card-desc">延续前两部的小镇群像，这一部把时间推到入冬前最后两周，三条人物线在同一个集市日交汇。对白极少，情绪靠环境音与长镜头推进。</p>
+                <div class="tagline"><i>小镇群像</i><i>长镜头</i><i>秋季档</i></div>
+                <div class="card-foot"><span class="score">4.8</span><span>热度 9,842</span></div>
+              </div>
+            </article>
+
+            <article class="card" data-key="雾港手记 纪录影像 港口 夜班">
+              <div class="card-img">
+                <img src="https://picsum.photos/seed/qiuxian-wugang02/400/300" width="400" height="300" loading="lazy" alt="《雾港手记》港口夜班纪录影像画面">
+                <span class="card-badge">本周热度 ↑6</span>
+              </div>
+              <div class="card-body">
+                <div class="card-type">纪录影像 · 52 分钟</div>
+                <h3 class="card-title">雾港手记</h3>
+                <p class="card-desc">跟拍一个港口夜班班组整整 21 天，重点不在货物，而在交接班间隙的闲聊与沉默。适合想看清「工作现场如何被镜头记录」的观众。</p>
+                <div class="tagline"><i>港口</i><i>夜班</i><i>观察式纪录</i></div>
+                <div class="card-foot"><span class="score">4.7</span><span>热度 8,317</span></div>
+              </div>
+            </article>
+
+            <article class="card" data-key="河湾十四户 纪录影像 村落 沿河">
+              <div class="card-img">
+                <img src="https://picsum.photos/seed/qiuxian-hewan03/400/300" width="400" height="300" loading="lazy" alt="《河湾十四户》沿河村落纪录影像画面">
+                <span class="card-badge">新片</span>
+              </div>
+              <div class="card-body">
+                <div class="card-type">纪录影像 · 64 分钟</div>
+                <h3 class="card-title">河湾十四户</h3>
+                <p class="card-desc">沿河十四户人家的四季记录，秋季段占比最大。镜头几乎不介入，靠住户自己的对话交代迁移与留守的选择，是今年纪录线里信息密度最高的一部。</p>
+                <div class="tagline"><i>村落</i><i>四季记录</i><i>迁移</i></div>
+                <div class="card-foot"><span class="score">4.9</span><span>热度 7,905</span></div>
+              </div>
+            </article>
+
+            <article class="card" data-key="短辑 秋声 短片合集 声音">
+              <div class="card-img">
+                <img src="https://picsum.photos/seed/qiuxian-qiusheng04/400/300" width="400" height="300" loading="lazy" alt="《秋声短辑》短片合集封面">
+                <span class="card-badge">合集</span>
+              </div>
+              <div class="card-body">
+                <div class="card-type">短片合集 · 5 辑 / 共 96 分钟</div>
+                <h3 class="card-title">秋声短辑</h3>
+                <p class="card-desc">五支 15 至 22 分钟的短片，共同主题是「被听见的秋天」。第二辑《屋檐水》与第四辑《收线》完成度最高，适合一次看两辑再决定是否追完整套。</p>
+                <div class="tagline"><i>短片</i><i>声音设计</i><i>合集</i></div>
+                <div class="card-foot"><span class="score">4.5</span><span>热度 6,420</span></div>
+              </div>
+            </article>
+
+            <article class="card" data-key="旧站台 剧情长片 铁路 离别">
+              <div class="card-img">
+                <img src="https://picsum.photos/seed/qiuxian-jiuzhantai05/400/300" width="400" height="300" loading="lazy" alt="《旧站台》铁路小站剧照">
+                <span class="card-badge">高分</span>
+              </div>
+              <div class="card-body">
+                <div class="card-type">剧情长片 · 104 分钟</div>
+                <h3 class="card-title">旧站台</h3>
+                <p class="card-desc">一座即将停用的小站，两名值班员与一位常年候车的老人。全片只有 11 个场景，靠重复出现的同一班列车制造时间感，是长片线里结构最简洁的一部。</p>
+                <div class="tagline"><i>铁路</i><i>离别</i><i>极简结构</i></div>
+                <div class="card-foot"><span class="score">4.6</span><span>热度 5,988</span></div>
+              </div>
+            </article>
+
+            <article class="card" data-key="晒场 纪录影像 农事 秋收">
+              <div class="card-img">
+                <img src="https://picsum.photos/seed/qiuxian-shaichang06/400/300" width="400" height="300" loading="lazy" alt="《晒场》秋收农事纪录影像画面">
+                <span class="card-badge">新片</span>
+              </div>
+              <div class="card-body">
+                <div class="card-type">纪录影像 · 47 分钟</div>
+                <h3 class="card-title">晒场</h3>
+                <p class="card-desc">围绕一块晒场的秋收前后，记录四户人家的劳作节奏。几乎没有解说词，所有信息来自现场对话，适合喜欢纯观察式纪录的观众。</p>
+                <div class="tagline"><i>秋收</i><i>农事</i><i>无解说</i></div>
+                <div class="card-foot"><span class="score">4.4</span><span>热度 5,102</span></div>
+              </div>
+            </article>
+
+            <article class="card" data-key="夜航 剧情长片 公路 夜间">
+              <div class="card-img">
+                <img src="https://picsum.photos/seed/qiuxian-yehang07/400/300" width="400" height="300" loading="lazy" alt="《夜航》夜间公路行车剧照">
+                <span class="card-badge">讨论度高</span>
+              </div>
+              <div class="card-body">
+                <div class="card-type">剧情长片 · 96 分钟</div>
+                <h3 class="card-title">夜航</h3>
+                <p class="card-desc">一辆夜班货车与搭车人，全片八成时间在车内。台词即兴成分较大，评价两极，喜欢密闭空间叙事的观众会看得很有代入感。</p>
+                <div class="tagline"><i>公路</i><i>密闭空间</i><i>即兴对白</i></div>
+                <div class="card-foot"><span class="score">4.2</span><span>热度 4,876</span></div>
+              </div>
+            </article>
+
+            <article class="card" data-key="风柜 短片合集 海风 独白">
+              <div class="card-img">
+                <img src="https://picsum.photos/seed/qiuxian-fenggui08/400/300" width="400" height="300" loading="lazy" alt="《风柜三章》海风题材短片合集封面">
+                <span class="card-badge">合集</span>
+              </div>
+              <div class="card-body">
+                <div class="card-type">短片合集 · 3 辑 / 共 61 分钟</div>
+                <h3 class="card-title">风柜三章</h3>
+                <p class="card-desc">三支以海风为线索的短片，独白比重较高。第三辑《回南》把前两辑的伏笔收拢，建议按顺序观看，否则会漏掉关键信息。</p>
+                <div class="tagline"><i>短片</i><i>海风</i><i>独白</i></div>
+                <div class="card-foot"><span class="score">4.3</span><span>热度 4,311</span></div>
+              </div>
+            </article>
+
+            <article class="card" data-key="炭火 剧情长片 小城 家庭">
+              <div class="card-img">
+                <img src="https://picsum.photos/seed/qiuxian-tanhuo09/400/300" width="400" height="300" loading="lazy" alt="《炭火》小城家庭题材剧照">
+                <span class="card-badge">口碑稳定</span>
+              </div>
+              <div class="card-body">
+                <div class="card-type">剧情长片 · 127 分钟</div>
+                <h3 class="card-title">炭火</h3>
+                <p class="card-desc">小城一家炭火铺的两代人，时间跨度六年。长片线里少见的家庭题材，节奏偏慢，但后半段的处理被讨论得最多，适合有整块时间的观众。</p>
+                <div class="tagline"><i>家庭</i><i>小城</i><i>跨年叙事</i></div>
+                <div class="card-foot"><span class="score">4.6</span><span>热度 4,190</span></div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <!-- 3 updates -->
+        <section class="block" id="updates">
+          <div class="block-head">
+            <div>
+              <span class="eyebrow">UPDATES</span>
+              <h2>最新更新与上线动态</h2>
+            </div>
+            <span class="more">截至 2026-11-25</span>
+          </div>
+          <ul class="updates">
+            <li>
+              <time>今天 09:30</time>
+              <div class="tt">《霜降之后》第三部全片上线<small>118 分钟完整版，含 6 分钟片尾字幕镜头</small></div>
+              <span class="badge b-new">新上架</span>
+            </li>
+            <li>
+              <time>今天 08:10</time>
+              <div class="tt">《雾港手记》追加幕后花絮 12 分钟<small>拍摄期港口原声素材，无解说</small></div>
+              <span class="badge b-up">已更新</span>
+            </li>
+            <li>
+              <time>昨天 21:40</time>
+              <div class="tt">《河湾十四户》秋季段重制<small>调色与混音重新处理，时长不变</small></div>
+              <span class="badge b-up">已更新</span>
+            </li>
+            <li>
+              <time>昨天 18:05</time>
+              <div class="tt">《秋声短辑》第五辑《收线》开放观看<small>22 分钟，本套最后一辑</small></div>
+              <span class="badge b-new">新上架</span>
+            </li>
+            <li>
+              <time>11 月 23 日</time>
+              <div class="tt">《旧站台》新增导演评论音轨<small>可选第二音轨，讨论小站实景拍摄</small></div>
+              <span class="badge b-up">已更新</span>
+            </li>
+            <li>
+              <time>11 月 22 日</time>
+              <div class="tt">《晒场》上线 47 分钟版本<small>比影展版多出 9 分钟晒场夜谈</small></div>
+              <span class="badge b-new">新上架</span>
+            </li>
+            <li>
+              <time>11 月 20 日</time>
+              <div class="tt">《夜航》新增中文字幕修订版<small>修正 14 处即兴对白的听写错误</small></div>
+              <span class="badge b-up">已更新</span>
+            </li>
+            <li>
+              <time>11 月 18 日</time>
+              <div class="tt">《风柜三章》三辑合并播放上线<small>支持连续播放，片头片尾自动跳过</small></div>
+              <span class="badge b-up">已更新</span>
+            </li>
+            <li>
+              <time>11 月 16 日</time>
+              <div class="tt">《炭火》导演访谈公开<small>26 分钟，谈六年跨度的选角与时间处理</small></div>
+              <span class="badge b-live">访谈</span>
+            </li>
+            <li>
+              <time>11 月 14 日</time>
+              <div class="tt">纪录影像专题「沿河与沿海」上线<small>收录 9 部，含《河湾十四户》《雾港手记》</small></div>
+              <span class="badge b-new">专题</span>
+            </li>
+            <li>
+              <time>11 月 11 日</time>
+              <div class="tt">短片合集片单扩充至 84 辑<small>新增 3 辑，均标注完整时长</small></div>
+              <span class="badge b-new">扩充</span>
+            </li>
+            <li>
+              <time>11 月 8 日</time>
+              <div class="tt">评分体系调整：新增「可看性」维度<small>与总分并列展示，方便快速判断</small></div>
+              <span class="badge b-live">规则</span>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 4 categories -->
+        <section class="block" id="categories">
+          <div class="block-head">
+            <div>
+              <span class="eyebrow">CATEGORIES</span>
+              <h2>按类型进入：8 个分类入口</h2>
+            </div>
+            <span class="more">共 386 条</span>
+          </div>
+          <div class="cat-grid">
+            <a class="cat" href="/#featured"><b>剧情长片</b><span>95—130 分钟整块观看</span><em>168 部</em></a>
+            <a class="cat" href="/#featured"><b>纪录影像</b><span>观察式与访谈式两类</span><em>134 部</em></a>
+            <a class="cat" href="/#featured"><b>短片合集</b><span>15—25 分钟为一辑</span><em>84 辑</em></a>
+            <a class="cat" href="/#guide"><b>小镇群像</b><span>多线人物与集市日结构</span><em>41 部</em></a>
+            <a class="cat" href="/#guide"><b>沿河沿海</b><span>港口、河湾与渔村题材</span><em>37 部</em></a>
+            <a class="cat" href="/#guide"><b>密闭空间</b><span>车内、屋内与夜班场景</span><em>29 部</em></a>
+            <a class="cat" href="/#news"><b>幕后与访谈</b><span>导演谈、花絮与制作记录</span><em>46 条</em></a>
+            <a class="cat" href="/#updates"><b>近期待更新</b><span>已定档但未上线的条目</span><em>12 条</em></a>
+          </div>
+        </section>
+
+        <!-- 5 deep -->
+        <section class="block" id="deep">
+          <div class="block-head">
+            <div>
+              <span class="eyebrow">DEEP READ</span>
+              <h2>深度解析：三条主线到底差在哪里</h2>
+            </div>
+          </div>
+          <div class="deep">
+            <h3>剧情长片：靠结构与留白，而不是靠情节密度</h3>
+            <p>影库里的剧情长片有一个共同特征：对白密度低。以《霜降之后》第三部为例，118 分钟里可统计的对白不足 300 句，大量信息通过环境音、人物动作与场景重复来传达。这种处理方式决定了观看门槛——如果你习惯用台词获取剧情，前 30 分钟会明显感到信息不足。</p>
+            <p>但结构上它们并不松散。《旧站台》只有 11 个场景，靠同一班列车在一天中出现的三次制造时间感；《炭火》用六年跨度做三段式，每段之间不做过渡说明，靠店铺陈设和人物年龄自行衔接。这类结构对观众的要求是：注意重复出现的物象，而不是等一句解释。</p>
+            <div class="callout"><b>判断要点：</b>如果一部长片在开场 15 分钟内反复出现同一物件（列车、炭火、集市招牌），它大概率会在后半段回收这个物象，先记住它比急着理解剧情更有效。</div>
+
+            <h3>纪录影像：观察式与访谈式的两种信息路径</h3>
+            <p>影库的 134 部纪录影像大致分成两类。观察式以《雾港手记》《晒场》为代表，不设解说、不出字幕条，信息全部来自现场；访谈式则以人物口述为主，画面多为静态环境。两者的观看体验差别很大：</p>
+            <ul>
+              <li><strong>观察式</strong>：信息密度低但沉浸感强，适合在安静环境里连续看完，中途打断容易丢失人物关系。</li>
+              <li><strong>访谈式</strong>：信息密度高，可分段观看，适合想快速了解某个具体议题的观众。</li>
+              <li><strong>混合式</strong>：如《河湾十四户》，以观察为主、访谈为辅，秋季段里两者的比例约为 7:3。</li>
+            </ul>
+            <p>如果你只有 50 分钟左右的零散时间，优先选观察式的《晒场》；如果想弄清楚一个具体问题（比如沿河村落为什么迁移），访谈式条目的效率更高。</p>
+
+            <h3>短片合集：按辑看，还是按整套看</h3>
+            <p>短片合集的观看策略与长片相反：<strong>不建议从第一辑开始顺序追</strong>。多数合集的各辑之间只有主题关联，没有剧情依赖。以《秋声短辑》为例，第二辑《屋檐水》和第四辑《收线》完成度最高，先看这两辑就能判断整套是否符合口味。</p>
+            <p>例外是《风柜三章》。三辑之间存在明确伏笔关系，第三辑《回南》回收了前两辑的线索，跳看会漏掉关键信息。判断方法很简单：合集条目页若标注「连续观看建议」，就按顺序看；没有标注的，按单辑完成度挑着看即可。</p>
+
+            <h3>评分怎么读：总分与可看性两个维度</h3>
+            <p>11 月 8 日起，影库的评分体系从单一总分改为「总分 + 可看性」双维度。总分反映近 30 天影迷打分的加权结果，可看性则是编辑根据时长、节奏、信息密度给出的 1 至 5 分估计。两者经常不一致：</p>
+            <ul>
+              <li>《炭火》总分 4.6，可看性 3.2——口碑好，但 127 分钟的慢节奏需要整块时间。</li>
+              <li>《晒场》总分 4.4，可看性 4.6——分数不算最高，但 47 分钟无解说观察，随时可看。</li>
+              <li>《夜航》总分 4.2，可看性 3.8——评价两极，即兴对白多，喜欢的人会觉得自然，不喜欢的会觉得散。</li>
+            </ul>
+            <p>选片时更实用的做法是：先看可看性是否匹配你当前的时间与注意力，再参考总分。高分但可看性低的条目，值得留到周末。</p>
+
+            <h3>秋季档的特殊性：光线与观看时段</h3>
+            <p>影库秋季作品占比接近六成，这不是巧合。多数长片把主要场景安排在日落前后，画面偏暖但整体亮度低。这类素材在夜间观看时对比度更明显，白天则容易显得偏灰。若你对画面细节敏感，建议在夜间或遮光环境下观看《霜降之后》《旧站台》这类光线处理较重的作品；《晒场》《雾港手记》则对观看环境要求不高。</p>
+          </div>
+        </section>
+
+        <!-- 6 guide -->
+        <section class="block" id="guide">
+          <div class="block-head">
+            <div>
+              <span class="eyebrow">GUIDE</span>
+              <h2>观看顺序与判断依据：第一次接触怎么走</h2>
+            </div>
+          </div>
+          <div class="steps">
+            <div class="step">
+              <div>
+                <h4>先用一部短片确认审美是否合拍</h4>
+                <p>从《秋声短辑》第二辑《屋檐水》开始，21 分钟，信息量适中。如果这支短片的节奏让你觉得舒服，后面三条主线大概率都能接受；如果觉得过于缓慢，可以直接跳到纪录影像的访谈式条目。</p>
+              </div>
+            </div>
+            <div class="step">
+              <div>
+                <h4>再用一部纪录影像建立人物与地域感</h4>
+                <p>推荐《雾港手记》。52 分钟，观察式，没有解说干扰，能最快建立对这条影库视觉语言的熟悉度。看完后你会更容易进入长片的节奏。</p>
+              </div>
+            </div>
+            <div class="step">
+              <div>
+                <h4>进入长片前，先确认可看性与时间是否匹配</h4>
+                <p>如果只有 100 分钟左右，选《旧站台》（104 分钟）或《夜航》（96 分钟）；如果有完整的两小时以上，再考虑《霜降之后》第三部与《炭火》。可看性低于 3.5 的条目，尽量留到不被打断的时段。</p>
+              </div>
+            </div>
+            <div class="step">
+              <div>
+                <h4>按题材延伸，而不是按分数排序</h4>
+                <p>喜欢小镇群像，就从《霜降之后》往前看前两部；喜欢沿河沿海，就在「沿河与沿海」专题里把 9 部依次看完。按题材延伸比按分数跳看更容易建立整体印象。</p>
+              </div>
+            </div>
+            <div class="step">
+              <div>
+                <h4>最后再看幕后与访谈</h4>
+                <p>《炭火》导演访谈与《旧站台》评论音轨适合在看完正片后补看。先看访谈会削弱正片里刻意留白部分的观感，顺序反了体验会打折。</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 7 faq -->
+        <section class="block" id="faq">
+          <div class="block-head">
+            <div>
+              <span class="eyebrow">FAQ</span>
+              <h2>常见问题</h2>
+            </div>
+          </div>
+          <div class="faq">
+            <details open>
+              <summary>秋霰免费电影在线观看里的条目一般多久更新一次？</summary>
+              <div class="ans">影库的常规更新节奏是每周一次，通常在周三上午集中上线 3 至 5 个条目；长片与纪录影像的幕后内容会零散追加，时间不固定。像《霜降之后》这类系列作品，两部之间的间隔通常在 8 至 12 个月。</div>
+            </details>
+            <details>
+              <summary>剧情长片和纪录影像在观看体验上有什么区别？</summary>
+              <div class="ans">最直接的差别是对白密度与信息获取方式。剧情长片对白少、依赖物象与结构，需要连续观看；纪录影像信息更直接，观察式靠现场、访谈式靠口述，可以分段看。时长上长片多在 95 至 130 分钟，纪录影像多在 45 至 65 分钟。</div>
+            </details>
+            <details>
+              <summary>第一次接触，从哪一部开始看比较好？</summary>
+              <div class="ans">建议《秋声短辑》第二辑《屋檐水》起步，21 分钟，判断审美是否合拍；然后看《雾港手记》52 分钟建立视觉熟悉度；再根据可用时间选《旧站台》或《霜降之后》第三部。不建议一上来就看 127 分钟的《炭火》。</div>
+            </details>
+            <details>
+              <summary>短片合集需要按顺序看吗？</summary>
+              <div class="ans">多数不需要。《秋声短辑》各辑之间只有主题关联，按完成度挑着看更高效。例外是《风柜三章》，三辑有明确伏笔关系，条目页会标注「连续观看建议」，这类必须按顺序。</div>
+            </details>
+            <details>
+              <summary>总分和可看性两个评分，哪个更值得参考？</summary>
+              <div class="ans">看你当前的状态。时间零散、注意力有限时，先看可看性是否在 4 分以上；有完整空闲时段、想找口碑作品时，再参考总分。两者经常不一致，比如《炭火》总分 4.6 但可看性只有 3.2，属于「值得看但要留时间」的类型。</div>
+            </details>
+            <details>
+              <summary>秋霰的作品为什么大多安排在秋季？</summary>
+              <div class="ans">秋季的光线条件适合这条影库偏好的低饱和、低亮度画面，日落前后的自然光能提供足够的层次而无需大量补光。这也带来实际影响：光线处理较重的作品在夜间观看对比度更好，白天看容易显得偏灰。</div>
+            </details>
+          </div>
+        </section>
+
+        <!-- 8 comments -->
+        <section class="block" id="comments">
+          <div class="block-head">
+            <div>
+              <span class="eyebrow">COMMENTS</span>
+              <h2>影迷评论（16 条）</h2>
+            </div>
+            <span class="more">近 30 天</span>
+          </div>
+          <div class="comments">
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#b4622a">林</span><span class="cm-name">林间有雾</span><span class="cm-time">今天 10:12</span></div><div class="cm-body">《霜降之后》第三部看完，集市日那场戏三条线交汇处理得很克制，但前面 40 分钟确实慢，得有心理准备。</div></div>
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#2f5d5a">周</span><span class="cm-name">周舟不吃鱼</span><span class="cm-time">今天 09:44</span></div><div class="cm-body">《雾港手记》是我今年看过最舒服的纪录影像，没有解说真的加分，夜班交接那段沉默比任何台词都有力量。</div></div>
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#8a4620">陈</span><span class="cm-name">陈年旧站台</span><span class="cm-time">昨天 22:30</span></div><div class="cm-body">《旧站台》只有 11 个场景这点很惊艳，同一班列车出现三次，时间感全靠这个建立，结构控会喜欢。</div></div>
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#6b5b8a">苏</span><span class="cm-name">苏打水没有气</span><span class="cm-time">昨天 20:05</span></div><div class="cm-body">《夜航》评价两极我理解，即兴对白太多，中间有十分钟我完全不知道要说什么。但车内镜头确实有代入感。</div></div>
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#3f6b3a">许</span><span class="cm-name">许一只猫</span><span class="cm-time">昨天 18:22</span></div><div class="cm-body">《河湾十四户》秋季段重制后颜色明显好看了，之前偏绿，现在更接近实景。信息量很大，建议一次看完。</div></div>
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#9a5a2e">何</span><span class="cm-name">何处不相逢</span><span class="cm-time">11 月 24 日</span></div><div class="cm-body">《秋声短辑》按完成度挑着看是对的，我直接看了第四辑《收线》，回头补第二辑也没障碍。</div></div>
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#2f5d5a">吴</span><span class="cm-name">吴语轻声</span><span class="cm-time">11 月 24 日</span></div><div class="cm-body">《炭火》总分 4.6 但可看性 3.2 这个标注很实在。我分了两次看完，后半段确实需要安静环境。</div></div>
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#7a4a6b">郑</span><span class="cm-name">郑在发呆</span><span class="cm-time">11 月 23 日</span></div><div class="cm-body">《晒场》47 分钟无解说，我以为会看不下去，结果一口气看完了。现场对话比解说词信息量大得多。</div></div>
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#b4622a">方</span><span class="cm-name">方寸之间</span><span class="cm-time">11 月 23 日</span></div><div class="cm-body">《风柜三章》跳看会漏信息，我第三辑先看的，回看前两辑才发现伏笔早就埋了，建议按顺序。</div></div>
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#4a453e">秦</span><span class="cm-name">秦时明月夜</span><span class="cm-time">11 月 22 日</span></div><div class="cm-body">可看性这个维度挺实用，但我觉得《夜航》3.8 给高了，即兴部分对普通观众其实不太友好。</div></div>
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#5b6b8a">尤</span><span class="cm-name">尤加利叶</span><span class="cm-time">11 月 21 日</span></div><div class="cm-body">《霜降之后》前两部在哪看？第三部看完想补，找了半天才发现前两部不在本周精选里。</div></div>
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#8a4620">施</span><span class="cm-name">施耐庵不写书</span><span class="cm-time">11 月 21 日</span></div><div class="cm-body">「沿河与沿海」专题做得不错，9 部一起看下来对这类题材的理解完全不一样了。</div></div>
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#3f6b3a">潘</span><span class="cm-name">潘多拉的盒子</span><span class="cm-time">11 月 20 日</span></div><div class="cm-body">《旧站台》导演评论音轨信息量很大，讲小站实景拍摄的部分值得单独听一遍。</div></div>
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#9a5a2e">顾</span><span class="cm-name">顾时归</span><span class="cm-time">11 月 19 日</span></div><div class="cm-body">纪录影像分观察式和访谈式这个分法挺清楚的，我以前一直混着看，难怪体验差很多。</div></div>
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#2f5d5a">韩</span><span class="cm-name">韩江有雪</span><span class="cm-time">11 月 18 日</span></div><div class="cm-body">《屋檐水》21 分钟，确实适合入门。我推给朋友看，反馈都是「节奏比想象中慢但能看下去」。</div></div>
+            <div class="cm"><div class="cm-top"><span class="ava" style="background:#7a4a6b">蒋</span><span class="cm-name">蒋门神喝茶</span><span class="cm-time">11 月 17 日</span></div><div class="cm-body">秋季作品占比高这点有共鸣，白天看《炭火》确实有点发灰，晚上重看了一遍差别明显。</div></div>
+          </div>
+        </section>
+
+        <!-- 9 news -->
+        <section class="block" id="news">
+          <div class="block-head">
+            <div>
+              <span class="eyebrow">NEWS</span>
+              <h2>相关资讯</h2>
+            </div>
+          </div>
+          <ul class="news">
+            <li>
+              <h4>《霜降之后》第三部上线首日热度破 9,800 <time>2026-11-25</time></h4>
+              <p>系列第三部成为影库今年秋季上线首日热度最高的剧情长片，集市日三线交汇段落成为讨论焦点。</p>
+            </li>
+            <li>
+              <h4>「沿河与沿海」专题收录扩至 9 部 <time>2026-11-24</time></h4>
+              <p>专题在原有 6 部基础上新增《河湾十四户》《晒场》与另 1 部港口题材纪录影像，均按地域重新编排。</p>
+            </li>
+            <li>
+              <h4>评分体系新增「可看性」维度满两周 <time>2026-11-22</time></h4>
+              <p>首批双维度评分数据显示，《晒场》可看性 4.6 位列纪录影像第一，《炭火》则出现总分与可看性落差最大的情况。</p>
+            </li>
+            <li>
+              <h4>《风柜三章》三辑合并播放功能上线 <time>2026-11-18</time></h4>
+              <p>合并播放支持连续观看并自动跳过片头片尾，解决了此前跳看第三辑导致伏笔遗漏的问题。</p>
+            </li>
+            <li>
+              <h4>《炭火》导演访谈公开，谈六年跨度选角 <time>2026-11-16</time></h4>
+              <p>26 分钟访谈里导演说明了三段式结构中人物年龄的处理方式，以及为何不做时间过渡说明。</p>
+            </li>
+            <li>
+              <h4>短片合集片单扩充至 84 辑 <time>2026-11-11</time></h4>
+              <p>新增 3 辑短片均标注完整时长与是否建议连续观看，合集条目页信息完整度明显提升。</p>
+            </li>
+          </ul>
+        </section>
+
+        <!-- 10 related -->
+        <section class="block" id="related">
+          <div class="block-head">
+            <div>
+              <span class="eyebrow">RELATED</span>
+              <h2>相关推荐：可以继续延伸的方向</h2>
+            </div>
+          </div>
+          <div class="rel-grid">
+            <a class="rel" href="/#featured"><span class="k">壹</span><span class="tx"><b>小镇群像多线叙事</b><span>《霜降之后》系列与同类 41 部</span></span></a>
+            <a class="rel" href="/#featured"><span class="k">贰</span><span class="tx"><b>港口与夜班题材</b><span>《雾港手记》延伸 18 部</span></span></a>
+            <a class="rel" href="/#featured"><span class="k">叁</span><span class="tx"><b>无解说观察式纪录</b><span>《晒场》《河湾十四户》一类</span></span></a>
+            <a class="rel" href="/#featured"><span class="k">肆</span><span class="tx"><b>密闭空间与公路</b><span>《夜航》及车内叙事 12 部</span></span></a>
+            <a class="rel" href="/#guide"><span class="k">伍</span><span class="tx"><b>按完成度挑短片</b><span>《秋声短辑》《风柜三章》</span></span></a>
+            <a class="rel" href="/#guide"><span class="k">陆</span><span class="tx"><b>家庭跨年叙事</b><span>《炭火》及六年以上跨度 9 部</span></span></a>
+            <a class="rel" href="/#news"><span class="k">柒</span><span class="tx"><b>导演访谈与评论音轨</b><span>《炭火》《旧站台》幕后</span></span></a>
+            <a class="rel" href="/#updates"><span class="k">捌</span><span class="tx"><b>秋季档待上线条目</b><span>已定档 12 条，含 4 部长片</span></span></a>
+          </div>
+        </section>
+
+        <!-- 11 ranking -->
+        <section class="block" id="ranking">
+          <div class="block-head">
+            <div>
+              <span class="eyebrow">RANKING</span>
+              <h2>近 30 天热度榜单</h2>
+            </div>
+            <span class="more">2026-11-25 统计</span>
+          </div>
+          <ol class="rank">
+            <li><span class="rk">1</span><span class="nm"><b>霜降之后（第三部）</b><span>剧情长片 · 4.8</span></span><span class="bar"><i style="width:100%"></i></span><span class="val">9,842</span></li>
+            <li><span class="rk">2</span><span class="nm"><b>雾港手记</b><span>纪录影像 · 4.7</span></span><span class="bar"><i style="width:84%"></i></span><span class="val">8,317</span></li>
+            <li><span class="rk">3</span><span class="nm"><b>河湾十四户</b><span>纪录影像 · 4.9</span></span><span class="bar"><i style="width:80%"></i></span><span class="val">7,905</span></li>
+            <li><span class="rk">4</span><span class="nm"><b>秋声短辑</b><span>短片合集 · 4.5</span></span><span class="bar"><i style="width:65%"></i></span><span class="val">6,420</span></li>
+            <li><span class="rk">5</span><span class="nm"><b>旧站台</b><span>剧情长片 · 4.6</span></span><span class="bar"><i style="width:61%"></i></span><span class="val">5,988</span></li>
+            <li><span class="rk">6</span><span class="nm"><b>晒场</b><span>纪录影像 · 4.4</span></span><span class="bar"><i style="width:52%"></i></span><span class="val">5,102</span></li>
+            <li><span class="rk">7</span><span class="nm"><b>夜航</b><span>剧情长片 · 4.2</span></span><span class="bar"><i style="width:49%"></i></span><span class="val">4,876</span></li>
+            <li><span class="rk">8</span><span class="nm"><b>风柜三章</b><span>短片合集 · 4.3</span></span><span class="bar"><i style="width:44%"></i></span><span class="val">4,311</span></li>
+            <li><span class="rk">9</span><span class="nm"><b>炭火</b><span>剧情长片 · 4.6</span></span><span class="bar"><i style="width:43%"></i></span><span class="val">4,190</span></li>
+            <li><span class="rk">10</span><span class="nm"><b>屋檐水</b><span>短片 · 4.5</span></span><span class="bar"><i style="width:36%"></i></span><span class="val">3,764</span></li>
+          </ol>
+        </section>
+
+      </div>
+
+      <!-- RIGHT SIDEBAR -->
+      <aside class="side" aria-label="辅助信息">
+        <div class="panel">
+          <h3>今日热榜 <span>每小时更新</span></h3>
+          <ul class="hot">
+            <li><span class="n">1</span><span class="t"><b>霜降之后（第三部）</b><span>今日上架 · 4.8</span></span></li>
+            <li><span class="n">2</span><span class="t"><b>雾港手记</b><span>幕后花絮已追加</span></span></li>
+            <li><span class="n">3</span><span class="t"><b>河湾十四户</b><span>秋季段重制</span></span></li>
+            <li><span class="n">4</span><span class="t"><b>秋声短辑·收线</b><span>第五辑开放</span></span></li>
+            <li><span class="n">5</span><span class="t"><b>旧站台</b><span>评论音轨上线</span></span></li>
+            <li><span class="n">6</span><span class="t"><b>晒场</b><span>47 分钟版本</span></span></li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>条目速览</h3>
+          <ul class="side-list">
+            <li>剧情长片 <span>168 部</span></li>
+            <li>纪录影像 <span>134 部</span></li>
+            <li>短片合集 <span>84 辑</span></li>
+            <li>幕后与访谈 <span>46 条</span></li>
+            <li>近期待更新 <span>12 条</span></li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3>热门标签</h3>
+          <div class="side-tags">
+            <a href="/#featured">小镇群像</a>
+            <a href="/#featured">沿河沿海</a>
+            <a href="/#guide">密闭空间</a>
+            <a href="/#featured">观察式纪录</a>
+            <a href="/#guide">短片合集</a>
+            <a href="/#deep">可看性评分</a>
+            <a href="/#news">导演访谈</a>
+            <a href="/#updates">秋季档</a>
+            <a href="/#featured">家庭叙事</a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3>观看提示</h3>
+          <p class="side-note"><b>《炭火》</b>时长 127 分钟，可看性 3.2，建议留出完整时段；<b>《晒场》</b>47 分钟无解说，适合零散时间。光线处理较重的作品在夜间观看对比度更好。</p>
+        </div>
+      </aside>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="foot-in">
+    <div class="foot-top">
+      <div>
+        <div class="foot-brand">
+          <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true">
+            <rect x="1" y="1" width="38" height="38" rx="10" fill="#3a342c"/>
+            <path d="M11 26c4-1 6-4 7-8 1 4 3 7 7 8-4 1-6 4-7 8-1-4-3-7-7-8z" fill="#c99a3f"/>
+            <circle cx="28.5" cy="12.5" r="3" fill="#b4622a"/>
+          </svg>
+          <span class="brand-text">
+            <span class="brand-name">秋霰免费电影在线观看</span>
+            <span class="brand-sub">QIUXIAN FILM ARCHIVE</span>
+          </span>
+        </div>
+        <p class="foot-desc">按剧情长片、纪录影像与短片合集三条主线归档的秋霰影库，标注时长、年份、可看性与观看顺序，供影迷查找条目与判断观看优先级。</p>
+      </div>
+      <div class="foot-col">
+        <h4>影库</h4>
+        <a href="/#overview">影库概览</a>
+        <a href="/#featured">精选片单</a>
+        <a href="/#categories">类型分类</a>
+        <a href="/#ranking">热度榜单</a>
+      </div>
+      <div class="foot-col">
+        <h4>阅读</h4>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">观看顺序</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">影迷评论</a>
+      </div>
+      <div class="foot-col">
+        <h4>动态</h4>
+        <a href="/#updates">更新动态</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#related">延伸方向</a>
+        <a href="/#top">返回顶部</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <p>条目评分来自近 30 天影迷打分加权结果，可看性为依据时长、节奏与信息密度给出的编辑估计，每日 09:00 更新。页面内容为影库条目整理与观看建议，不涉及视听内容的实际传播。</p>
+      <p>© 2026 秋霰影库整理 · 内容归档于 2026-11-25</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var q = document.getElementById('q');
+  var grid = document.getElementById('cardGrid');
+  var noResult = document.getElementById('noResult');
+  var resetBtn = document.getElementById('resetBtn');
+  if(!q || !grid) return;
+  var cards = Array.prototype.slice.call(grid.querySelectorAll('.card'));
+
+  function filter(){
+    var val = q.value.trim().toLowerCase();
+    var shown = 0;
+    cards.forEach(function(c){
+      var key = (c.getAttribute('data-key') || '') + ' ' + c.textContent.toLowerCase();
+      var hit = !val || key.toLowerCase().indexOf(val) > -1;
+      c.classList.toggle('is-hidden', !hit);
+      if(hit) shown++;
+    });
+    noResult.classList.toggle('show', shown === 0);
+  }
+
+  q.addEventListener('input', filter);
+  q.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ q.value = ''; filter(); }
+  });
+  if(resetBtn){
+    resetBtn.addEventListener('click', function(){
+      q.value = '';
+      filter();
+      q.focus();
+    });
+  }
+})();
+</script>
+
+</body>
+            </html>
